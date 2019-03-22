@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying post tags page
+ * The template for displaying custom post type taxonomy page
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *

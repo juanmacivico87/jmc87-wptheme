@@ -8,11 +8,15 @@
  */
 
 get_header();
-?>
 
-<!-- HTML CODE HERE -->
+if ( have_posts() ) : 
+    while ( have_posts() ) : the_post();
+    endwhile;
+    get_template_part( 'template-parts/pagination' );
+else : ?>
+	<p><?php esc_html_e( 'Sorry, no posts matched your criteria.', THEME_TRANSLATE ); ?></p>
+<?php endif;
 
-<?php
 //get_sidebar();
 
 get_footer();

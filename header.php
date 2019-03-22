@@ -20,4 +20,6 @@
 			<?php wp_head(); ?>
 		</head>
 		<body>
+			<!-- IMPORTANT. README: Menu function: https://developer.wordpress.org/reference/functions/wp_nav_menu/ -->
 			<!-- HTML CODE HERE -->
+			<?php get_template_part( 'template-parts/breadcrumbs' ); ?>

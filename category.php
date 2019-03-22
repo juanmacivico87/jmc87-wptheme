@@ -11,7 +11,8 @@ get_header();
 
 if ( have_posts() ) : 
     while ( have_posts() ) : the_post();
-    endwhile; 
+    endwhile;
+    get_template_part( 'template-parts/pagination' );
 else : ?>
 	<p><?php esc_html_e( 'Sorry, no posts matched your criteria.', THEME_TRANSLATE ); ?></p>
 <?php endif;
