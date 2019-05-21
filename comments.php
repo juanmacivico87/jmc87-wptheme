@@ -21,12 +21,12 @@ if ( post_password_required() ) {
 			<?php $jmc87_comment_count = get_comments_number();
 			if ( '1' === $jmc87_comment_count ) {
 				printf(
-					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', THEME_TRANSLATE ),
+					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', THEME_TEXTDOMAIN ),
 					'<span>' . get_the_title() . '</span>'
 				);
 			} else {
 				printf( 
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $jmc87_comment_count, 'comments title', THEME_TRANSLATE ) ),
+					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $jmc87_comment_count, 'comments title', THEME_TEXTDOMAIN ) ),
 					number_format_i18n( $jmc87_comment_count ),
 					'<span>' . get_the_title() . '</span>'
 				);
@@ -47,7 +47,7 @@ if ( post_password_required() ) {
 		<?php the_comments_navigation();
 
 		if ( !comments_open() ) : ?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', THEME_TRANSLATE ); ?></p>
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', THEME_TEXTDOMAIN ); ?></p>
 		<?php endif;
 	endif;
 	//IMPORTANT. README: https://developer.wordpress.org/reference/functions/comment_form/

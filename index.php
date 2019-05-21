@@ -9,6 +9,6 @@
 
 get_header();
 
-_e( 'Silence is golden and code is poetry', THEME_TRANSLATE );
+_e( 'Silence is golden and code is poetry', THEME_TEXTDOMAIN );
 
 get_footer();

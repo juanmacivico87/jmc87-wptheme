@@ -15,7 +15,7 @@ switch( $post_type ) {
 		get_template_part( 'template-parts/singles/single', $post_type );
 		break;
 	default:
-		_e( 'This content type is not defined', THEME_TRANSLATE );
+		_e( 'This content type is not defined', THEME_TEXTDOMAIN );
 		break;
 }
 

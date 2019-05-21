@@ -8,11 +8,12 @@
  */
 
 if ( ! function_exists( 'jmc87_setup' ) ) :
-
-	function jmc87_setup() {
-
-		define( THEME_TRANSLATE, 'jmc87-wptheme' );
-		load_theme_textdomain( THEME_TRANSLATE, get_template_directory() . '/languages' );
+	function jmc87_setup()
+	{
+		if ( !defined( 'THEME_TEXTDOMAIN' ) )
+			define( 'THEME_TEXTDOMAIN', 'jmc87-wptheme' );
+			
+		load_theme_textdomain( THEME_TEXTDOMAIN, get_template_directory() . '/languages' );
 
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'title-tag' );
@@ -28,8 +29,8 @@ if ( ! function_exists( 'jmc87_setup' ) ) :
 		
 		register_nav_menus(
 			array(
-				'header-menu' => __( 'Header Menu', THEME_TRANSLATE ),
-				'footer-menu' => __( 'Footer Menu', THEME_TRANSLATE)
+				'header-menu' => __( 'Header Menu', THEME_TEXTDOMAIN ),
+				'footer-menu' => __( 'Footer Menu', THEME_TEXTDOMAIN)
 			)
 		);
 	}
@@ -45,3 +46,9 @@ function jmc87_scripts()
 	wp_enqueue_script( 'jmc87-js', get_template_directory_uri() . '/inc/js/js-file.js', array(), false, true );
 }
 add_action( 'wp_enqueue_scripts', 'jmc87_scripts' );
+
+/**
+ * Theme classes
+ */
+require 'src/sample/sample.php';
+$sample = new sampleClass();

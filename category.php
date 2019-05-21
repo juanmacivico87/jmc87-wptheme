@@ -14,7 +14,7 @@ if ( have_posts() ) :
     endwhile;
     get_template_part( 'template-parts/pagination' );
 else : ?>
-	<p><?php esc_html_e( 'Sorry, no posts matched your criteria.', THEME_TRANSLATE ); ?></p>
+	<p><?php esc_html_e( 'Sorry, no posts matched your criteria.', THEME_TEXTDOMAIN ); ?></p>
 <?php endif;
 
 //get_sidebar();
