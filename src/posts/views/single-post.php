@@ -1,18 +1,13 @@
 <?php
 /**
- * The template for displaying all single posts
+ * The template for displaying posts single page
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package jmc87
+ * @package jmc87-wptheme
  */
-
-get_header();
 ?>
 
 <!-- HTML CODE HERE -->
 
-<?php
-//get_sidebar();
-
-get_footer();
+<?php get_sidebar();

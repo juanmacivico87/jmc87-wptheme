@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package jmc87
+ * @package jmc87-wptheme
  */
 
 get_header();
@@ -12,7 +12,5 @@ get_header();
 
 <!-- HTML CODE HERE -->
 
-<?php
-//get_sidebar();
-
+<?php get_sidebar();
 get_footer();

@@ -1,14 +1,13 @@
 <?php
 /**
- * The main template file
+ * The template for displaying custom post type single page
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package jmc87-wptheme
  */
+?>
 
-get_header();
+<!-- HTML CODE HERE -->
 
-_e( 'Silence is golden and code is poetry', THEME_TEXTDOMAIN );
-
-get_footer();
+<?php get_sidebar();

@@ -4,19 +4,12 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package jmc87
+ * @package jmc87-wptheme
  */
 
 get_header();
 
-if ( have_posts() ) : 
-    while ( have_posts() ) : the_post();
-    endwhile;
-    get_template_part( 'template-parts/pagination' );
-else : ?>
-	<p><?php esc_html_e( 'Sorry, no posts matched your criteria.', THEME_TEXTDOMAIN ); ?></p>
-<?php endif;
-
-//get_sidebar();
+$post_type = get_post_type();
+get_template_part( 'src/posts/views/archive', $post_type );
 
 get_footer();

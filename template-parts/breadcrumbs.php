@@ -4,5 +4,5 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package jmc87
+ * @package jmc87-wptheme
  */

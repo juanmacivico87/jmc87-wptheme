@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package jmc87
+ * @package jmc87-wptheme
  */
 
 get_header();
@@ -12,5 +12,4 @@ get_header();
 
 <!-- HTML CODE HERE -->
 
-<?php
-get_footer();
+<?php get_footer();
