@@ -11,10 +11,10 @@ if ( !defined( 'THEME_TEXTDOMAIN' ) )
 	define( 'THEME_TEXTDOMAIN', 'jmc87-wptheme' );
 
 require 'config/config.php';
-$config = new JMC87_Config();
+$config = new JMC87_ThemeConfig();
 
 require 'config/menus.php';
-$config = new JMC87_Menus();
+$menus = new JMC87_Menus();
 
 require 'config/styles.php';
 $styles = new JMC87_LoadStyles();
