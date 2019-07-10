@@ -10,4 +10,5 @@
 
 <!-- HTML CODE HERE -->
 
-<?php get_sidebar();
+<?php comments_template();
+get_sidebar();
