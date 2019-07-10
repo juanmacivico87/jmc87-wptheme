@@ -12,7 +12,6 @@ class JMC87_ThemeConfig
 {
     public function __construct()
     {
-        die('aaaaaa');
         add_action( 'after_setup_theme', array( $this, 'jmc87_load_theme_textdomain' ) );
         add_action( 'after_setup_theme', array( $this, 'jmc87_load_theme_supports' ) );
     }
