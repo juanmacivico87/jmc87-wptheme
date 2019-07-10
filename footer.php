@@ -16,6 +16,7 @@ wp_nav_menu(
 	array( 
 		'theme_location'  => 'footer-menu',
 		'container_class' => 'footer_menu',
+		'depth'			  => '1',
 	)
 );
 wp_footer(); ?>

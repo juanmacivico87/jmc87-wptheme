@@ -26,6 +26,7 @@
 				array( 
 					'theme_location'  => 'header-menu',
 					'container_class' => 'header_menu',
+					'depth'			  => '2',
 				)
 			);
 			get_template_part( 'template-parts/breadcrumbs' );
