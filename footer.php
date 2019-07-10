@@ -8,8 +8,16 @@
  *
  * @package jmc87-wptheme
  */
-?>
-		<!-- HTML CODE HERE -->
-		<?php wp_footer(); ?>
-	</body>
-</html>
+
+//IMPORTANT. README: 
+//	Menu handbook: https://developer.wordpress.org/themes/functionality/navigation-menus/
+//	Menu function: https://developer.wordpress.org/reference/functions/wp_nav_menu/ -->
+wp_nav_menu(
+	array( 
+		'theme_location'  => 'footer-menu',
+		'container_class' => 'footer_menu',
+	)
+);
+wp_footer(); ?>
+
+</body></html>
