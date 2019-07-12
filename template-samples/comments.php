@@ -1,6 +1,7 @@
 <div id="comments" class="comments-area">
 	<h2 class="comments-title">Comments in this post</h2>
     <ol class="comment-list">
+        <!-- Don´t change the classes names -->
         <li id="comment-7" class="comment byuser comment-author-juanmacivico87 bypostauthor even thread-even depth-1 parent">
             <article id="div-comment-7" class="comment-body">
                 <footer class="comment-meta">
@@ -75,6 +76,7 @@
                 </div>
             </article><!-- .comment-body -->
         </li><!-- #comment-## -->
+        <!-- End don´t change the classes names -->
     </ol>
     <nav class="navigation comment-navigation" role="navigation">
         <h2 class="screen-reader-text">Navegación de comentarios</h2>

@@ -17,20 +17,27 @@ if ( post_password_required() ) {
 
 <div id="comments" class="comments-area">
 	<?php if ( have_comments() ) : ?>
-		<h2 class="comments-title"><?php esc_html_e( 'Comments in this post', THEME_TEXTDOMAIN ) ?></h2>
+		<h2 class="comments-title"><?php __( 'Comments in this post', THEME_TEXTDOMAIN ) ?></h2>
 		<?php //IMPORTANT. README: https://codex.wordpress.org/Function_Reference/wp_list_comments ?>
 		<ol class="comment-list">
 			<?php $args = array(
-				'style'      => 'ul',
-				'short_ping' => true,
+				'style'       => 'ul',
+				'reply_text'  => __( 'Reply', THEME_TEXTDOMAIN ),
+				'short_ping'  => true,
+				'avatar_size' => '32',
 			);
 			wp_list_comments( $args ); ?>
 		</ol>
 		<?php //https://developer.wordpress.org/reference/functions/get_the_comments_navigation/
-		the_comments_navigation();
+		$args = array(
+			'prev_text' 		 => __( '<', THEME_TEXTDOMAIN ),
+			'next_text' 		 => __( '>', THEME_TEXTDOMAIN ),
+			'screen_reader_text' => __( 'View more comments', THEME_TEXTDOMAIN ),
+		);
+		the_comments_navigation( $args );
 
 		if ( !comments_open() ) : ?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed', THEME_TEXTDOMAIN ); ?></p>
+			<p class="no-comments"><?php __( 'Comments are closed', THEME_TEXTDOMAIN ); ?></p>
 		<?php endif;
 	endif;
 
