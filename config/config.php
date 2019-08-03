@@ -19,7 +19,7 @@ class JMC87_ThemeConfig
 
     public function jmc87_load_theme_textdomain()
     {
-        load_theme_textdomain( THEME_TEXTDOMAIN, get_template_directory() . '/languages' );
+        load_theme_textdomain( THEME_TEXTDOMAIN, get_template_directory_uri() . '/languages' );
     }
 
     public function jmc87_load_theme_supports()
@@ -42,6 +42,6 @@ class JMC87_ThemeConfig
     function jmc87_mylogo_login()
     {
         echo '<style type="text/css">
-            h1 a { background-image:url(' . get_template_directory() . '/inc/images/website-logo.svg) !important; }</style>';
+            .login h1 a { background-image:url(' . get_template_directory_uri() . '/inc/images/website-logo.svg) !important; }</style>';
     }
 }
