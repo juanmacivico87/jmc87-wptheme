@@ -14,6 +14,7 @@ class JMC87_ThemeConfig
     {
         add_action( 'after_setup_theme', array( $this, 'jmc87_load_theme_textdomain' ) );
         add_action( 'after_setup_theme', array( $this, 'jmc87_load_theme_supports' ) );
+        add_action( 'login_head', array( $this, 'jmc87_mylogo_login' ) );
     }
 
     public function jmc87_load_theme_textdomain()
@@ -36,5 +37,11 @@ class JMC87_ThemeConfig
             'flex-width' 		=> true,
             'header-text' 		=> array( 'site-title', 'site-description' ),
         ) );
+    }
+
+    function jmc87_mylogo_login()
+    {
+        echo '<style type="text/css">
+            h1 a { background-image:url(' . get_template_directory() . '/inc/images/website-logo.svg) !important; }</style>';
     }
 }
