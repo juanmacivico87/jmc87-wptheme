@@ -1,1 +1,1 @@
-console.log( 'Developed by JuanMaCivico87' );
+console.log( 'Developed by JuanMaCivico87 - wwww.juanmacivico87.com - hola@juanmacivico87.com' );
