@@ -8,7 +8,8 @@
  */
 ?>
 
-<!-- HTML CODE HERE -->
+<h1><?php the_title() ?></h1>
+<?php echo $post->post_content;
 
-<?php comments_template();
+comments_template();
 get_sidebar();
