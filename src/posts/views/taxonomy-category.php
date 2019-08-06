@@ -9,7 +9,6 @@
 
 if ( have_posts() ) : 
     while ( have_posts() ) : the_post();
-        $categories = get_the_terms( $post->ID, 'category' );
         $post_tags  = get_the_terms( $post->ID, 'post_tag' ); ?>
 
         <a href="<?php the_permalink() ?>" title="<?php the_title() ?>"><img src="<?php echo get_the_post_thumbnail_url() ?>" alt=""></a>
