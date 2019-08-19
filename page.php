@@ -10,7 +10,8 @@
 get_header();
 ?>
 
-<!-- HTML CODE HERE -->
+<h1><?php the_title() ?></h1>
+<?php echo $post->post_content;
 
-<?php get_sidebar();
+get_sidebar();
 get_footer();
