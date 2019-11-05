@@ -7,9 +7,15 @@
  * @package jmc87-wptheme
  */
 
-get_header();
+get_header(); ?>
 
-$post_type = get_post_type();
-get_template_part( 'src/posts/views/archive', $post_type );
+<h1>You are in a home (blog) page</h1>
+
+<?php if ( have_posts() ) : 
+    while ( have_posts() ) : the_post(); ?>
+        <h2><?php the_title() ?></h2>
+        <?php echo $post->post_content;
+    endwhile;
+endif;
 
 get_footer();

@@ -7,9 +7,15 @@
  * @package jmc87-wptheme
  */
 
-get_header();
-?>
+get_header(); ?>
 
-<!-- HTML CODE HERE -->
+<h1>You are in the front page</h1>
 
-<?php get_footer();
+<?php if ( have_posts() ) : 
+    while ( have_posts() ) : the_post(); ?>
+        <h2><?php the_title() ?></h2>
+        <?php echo $post->post_content;
+    endwhile;
+endif;
+
+get_footer();

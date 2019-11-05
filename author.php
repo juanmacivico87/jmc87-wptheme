@@ -1,15 +1,15 @@
 <?php
 /**
- * The template for displaying all search results pages
+ * The template for displaying author page
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package jmc87-wptheme
  */
 
 get_header(); ?>
 
-<h1>You are in search page</h1>
+<h1>You are in an author page</h1>
 
 <?php if ( have_posts() ) : 
     while ( have_posts() ) : the_post(); ?>

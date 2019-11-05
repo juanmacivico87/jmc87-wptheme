@@ -7,19 +7,12 @@
  * @package jmc87-wptheme
  */
 
-get_header();
+get_header(); ?>
 
-$post_type = get_post_type();
-switch( $post_type ) {
-	case 'post':
-		get_template_part( 'src/posts/views/single', $post_type );
-		break;
-	case 'sample':
-		get_template_part( 'src/sample/views/single', $post_type );
-		break;
-	default:
-		_e( 'Post type single page not found', THEME_TEXTDOMAIN );
-		break;
-}
+<h1><?php the_title() ?></h1>
+<?php echo $post->post_content;
+
+comments_template();
+get_sidebar();
 
 get_footer();

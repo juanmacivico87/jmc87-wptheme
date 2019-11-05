@@ -7,16 +7,15 @@
  * @package jmc87-wptheme
  */
 
-get_header();
+get_header(); ?>
 
-$taxonomy = get_queried_object()->taxonomy;
-switch( $taxonomy ) {
-	case 'example':
-		get_template_part( 'src/sample/views/taxonomy', $taxonomy );
-		break;
-	default:
-		_e( 'Post type taxonomy page not found', THEME_TEXTDOMAIN );
-		break;
-}
+<h1>You are in a taxonomy page</h1>
+
+<?php if ( have_posts() ) : 
+    while ( have_posts() ) : the_post(); ?>
+        <h2><?php the_title() ?></h2>
+        <?php echo $post->post_content;
+    endwhile;
+endif;
 
 get_footer();

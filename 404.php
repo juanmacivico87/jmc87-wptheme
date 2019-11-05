@@ -8,8 +8,7 @@
  */
 
 get_header();
-?>
 
-<!-- HTML CODE HERE -->
+echo 'Error 404';
 
-<?php get_footer();
+get_footer();
