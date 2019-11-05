@@ -9,6 +9,6 @@
 
 get_header();
 
-_e( 'Silence is golden and code is poetry', THEME_TEXTDOMAIN );
+_e( 'Silence is golden and code is poetry', 'jmc87-wptheme-textdomain' );
 
 get_footer();

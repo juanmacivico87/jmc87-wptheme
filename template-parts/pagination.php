@@ -13,8 +13,8 @@
 
 $args = array(
     'mid_size'  => 2,
-    'prev_text' => __( '<', THEME_TEXTDOMAIN ),
-    'next_text' => __( '>', THEME_TEXTDOMAIN ),
+    'prev_text' => __( '<', 'jmc87-wptheme-textdomain' ),
+    'next_text' => __( '>', 'jmc87-wptheme-textdomain' ),
 );
 
 the_posts_pagination( $args );

@@ -7,9 +7,6 @@
  * @package jmc87-wptheme
  */
 
-if ( !defined( 'THEME_TEXTDOMAIN' ) )
-	define( 'THEME_TEXTDOMAIN', 'jmc87-wptheme' );
-
 require 'config/config.php';
 $config = new JMC87_ThemeConfig();
 

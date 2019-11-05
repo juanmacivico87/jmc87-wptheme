@@ -19,8 +19,8 @@ class JMC87_Menus
     {
         register_nav_menus(
 			array(
-				'header-menu' => __( 'Header Menu', THEME_TEXTDOMAIN ),
-				'footer-menu' => __( 'Footer Menu', THEME_TEXTDOMAIN)
+				'header-menu' => __( 'Header Menu', 'jmc87-wptheme-textdomain' ),
+				'footer-menu' => __( 'Footer Menu', 'jmc87-wptheme-textdomain')
 			)
 		);
     }

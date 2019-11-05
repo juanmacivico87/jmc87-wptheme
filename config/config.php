@@ -19,7 +19,7 @@ class JMC87_ThemeConfig
 
     public function jmc87_load_theme_textdomain()
     {
-        load_theme_textdomain( THEME_TEXTDOMAIN, get_template_directory_uri() . '/languages' );
+        load_theme_textdomain( 'jmc87-wptheme-textdomain', get_template_directory_uri() . '/languages' );
     }
 
     public function jmc87_load_theme_supports()
