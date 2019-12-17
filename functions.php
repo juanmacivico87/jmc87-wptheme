@@ -18,9 +18,3 @@ $styles = new JMC87_LoadStyles();
 
 require 'config/scripts.php';
 $scripts = new JMC87_LoadScripts();
-
-require 'src/posts/posts.php';
-$posts_class = new JMC87_PostsClass();
-
-require 'src/sample/sample.php';
-$sample = new JMC87_SampleClass();
