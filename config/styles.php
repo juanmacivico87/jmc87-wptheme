@@ -17,6 +17,6 @@ class JMC87_LoadStyles
 
     function jmc87_load_styles()
     {
-        wp_enqueue_style( 'jmc87-style', get_template_directory_uri() . '/inc/css/css-file.css' );
+        wp_enqueue_style( 'jmc87-style', THEME_INCLUDES_DIR . '/css/css-file.css' );
     }
 }
