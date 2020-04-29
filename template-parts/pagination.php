@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package jmc87-wptheme
+ * @package wptheme
  */
 
  //https://developer.wordpress.org/themes/functionality/pagination/
@@ -13,8 +13,8 @@
 
 $args = array(
     'mid_size'  => 2,
-    'prev_text' => __( '<', 'jmc87-wptheme-textdomain' ),
-    'next_text' => __( '>', 'jmc87-wptheme-textdomain' ),
+    'prev_text' => __( '<', 'wptheme-textdomain' ),
+    'next_text' => __( '>', 'wptheme-textdomain' ),
 );
 
 the_posts_pagination( $args );

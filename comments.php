@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package jmc87-wptheme
+ * @package wptheme
  */
 
 if ( post_password_required() ) {
@@ -17,12 +17,12 @@ if ( post_password_required() ) {
 
 <div id="comments" class="comments-area">
 	<?php if ( have_comments() ) : ?>
-		<h2 class="comments-title"><?php __( 'Comments in this post', 'jmc87-wptheme-textdomain' ) ?></h2>
+		<h2 class="comments-title"><?php __( 'Comments in this post', 'wptheme-textdomain' ) ?></h2>
 		<?php //IMPORTANT. README: https://codex.wordpress.org/Function_Reference/wp_list_comments ?>
 		<ol class="comment-list">
 			<?php $args = array(
 				'style'       => 'ul',
-				'reply_text'  => __( 'Reply', 'jmc87-wptheme-textdomain' ),
+				'reply_text'  => __( 'Reply', 'wptheme-textdomain' ),
 				'short_ping'  => true,
 				'avatar_size' => '32',
 			);
@@ -30,27 +30,27 @@ if ( post_password_required() ) {
 		</ol>
 		<?php //https://developer.wordpress.org/reference/functions/get_the_comments_navigation/
 		$args = array(
-			'prev_text' 		 => __( '<', 'jmc87-wptheme-textdomain' ),
-			'next_text' 		 => __( '>', 'jmc87-wptheme-textdomain' ),
-			'screen_reader_text' => __( 'View more comments', 'jmc87-wptheme-textdomain' ),
+			'prev_text' 		 => __( '<', 'wptheme-textdomain' ),
+			'next_text' 		 => __( '>', 'wptheme-textdomain' ),
+			'screen_reader_text' => __( 'View more comments', 'wptheme-textdomain' ),
 		);
 		the_comments_navigation( $args );
 
 		if ( !comments_open() ) : ?>
-			<p class="no-comments"><?php __( 'Comments are closed', 'jmc87-wptheme-textdomain' ); ?></p>
+			<p class="no-comments"><?php __( 'Comments are closed', 'wptheme-textdomain' ); ?></p>
 		<?php endif;
 	endif;
 
 	//IMPORTANT. README: https://developer.wordpress.org/reference/functions/comment_form/
 	$fields = array(
-		'author' => '<p class="comment-form-author"><label for="author">' . __( 'Your name', 'jmc87-wptheme-textdomain' ) . '</label>' . '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" /></p>',
-		'email'  => '<p class="comment-form-email"><label for="email">' . __( 'Your email', 'jmc87-wptheme-textdomain' ) . '</label>' . '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" /></p>',
-		'url' => '<p class="comment-form-url"><label for="url">' . __( 'Your website', 'jmc87-wptheme-textdomain' ) . '</label><input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></p>',
-		'cookies' => '<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /><label for="wp-comment-cookies-consent">' . __( 'Save my name, email, and website in this browser for the next time I comment.', 'jmc87-wptheme-textdomain' ) . '</label></p>'
+		'author' => '<p class="comment-form-author"><label for="author">' . __( 'Your name', 'wptheme-textdomain' ) . '</label>' . '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" /></p>',
+		'email'  => '<p class="comment-form-email"><label for="email">' . __( 'Your email', 'wptheme-textdomain' ) . '</label>' . '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" /></p>',
+		'url' => '<p class="comment-form-url"><label for="url">' . __( 'Your website', 'wptheme-textdomain' ) . '</label><input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></p>',
+		'cookies' => '<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /><label for="wp-comment-cookies-consent">' . __( 'Save my name, email, and website in this browser for the next time I comment.', 'wptheme-textdomain' ) . '</label></p>'
 	);
-	$comment_field = '<p class="comment-form-comment"><label for="comment">' . _x( 'Your comment here', 'jmc87-wptheme-textdomain' ) . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>';
-	$must_log_in = '<p class="must-log-in">' .  sprintf( __( 'You must be <a href="%s">logged in</a> to post a comment.', 'jmc87-wptheme-textdomain' ), wp_login_url( apply_filters( 'the_permalink', get_permalink() ) ) ) . '</p>';
-	$logged_in_as = '<p class="logged-in-as">' . sprintf( __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>', 'jmc87-wptheme-textdomain' ), admin_url( 'profile.php' ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink() ) ) ) . '</p>';
+	$comment_field = '<p class="comment-form-comment"><label for="comment">' . _x( 'Your comment here', 'wptheme-textdomain' ) . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>';
+	$must_log_in = '<p class="must-log-in">' .  sprintf( __( 'You must be <a href="%s">logged in</a> to post a comment.', 'wptheme-textdomain' ), wp_login_url( apply_filters( 'the_permalink', get_permalink() ) ) ) . '</p>';
+	$logged_in_as = '<p class="logged-in-as">' . sprintf( __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>', 'wptheme-textdomain' ), admin_url( 'profile.php' ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink() ) ) ) . '</p>';
 
 	$args = array(
 		'fields' 			  => $fields,
@@ -62,12 +62,12 @@ if ( post_password_required() ) {
 		'id_submit'			  => 'submit',
 		'class_submit'		  => 'submit',
 		'title_reply_before'  => '<h3 id="reply-title" class="comment-reply-title">',
-		'title_reply'		  => __( 'Write your comment here', 'jmc87-wptheme-textdomain' ),
+		'title_reply'		  => __( 'Write your comment here', 'wptheme-textdomain' ),
 		'title_reply_after'	  => '</h3>',
 		'cancel_reply_before' => '<small>',
-		'cancel_reply_link'   => __( 'Cancel reply', 'jmc87-wptheme-textdomain' ),
+		'cancel_reply_link'   => __( 'Cancel reply', 'wptheme-textdomain' ),
 		'cancel_reply_after'  => '</small>',
-		'label_submit'		  => __( 'Send your comment', 'jmc87-wptheme-textdomain' )
+		'label_submit'		  => __( 'Send your comment', 'wptheme-textdomain' )
 	);
 	comment_form( $args ); ?>
 </div>

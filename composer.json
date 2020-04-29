@@ -1,0 +1,13 @@
+{
+    "name": "WordPress Theme",
+    "description": "Custom WordPress Theme",
+    "require": {
+        "php": ">=7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Config\\": "config/",
+            "Source\\": "src/"
+        }
+    }
+}
