@@ -9,12 +9,12 @@
 
 get_header(); ?>
 
-<h1>You are in a tag page</h1>
+<h1><?php esc_html_e( 'You are in a tag page', 'wptheme-textdomain' ) ?></h1>
 
 <?php if ( have_posts() ) : 
     while ( have_posts() ) : the_post(); ?>
         <h2><?php the_title() ?></h2>
-        <?php echo $post->post_content;
+        <?php echo wp_kses_post( $post->post_content );
     endwhile;
 endif;
 

@@ -10,7 +10,7 @@
 get_header(); ?>
 
 <h1><?php the_title() ?></h1>
-<?php echo $post->post_content;
+<?php echo wp_kses_post( $post->post_content );
 
 comments_template();
 get_sidebar();

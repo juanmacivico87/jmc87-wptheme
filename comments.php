@@ -17,7 +17,7 @@ if ( post_password_required() ) {
 
 <div id="comments" class="comments-area">
 	<?php if ( have_comments() ) : ?>
-		<h2 class="comments-title"><?php __( 'Comments in this post', 'wptheme-textdomain' ) ?></h2>
+		<h2 class="comments-title"><?php _e( 'Comments in this post', 'wptheme-textdomain' ) ?></h2>
 		<?php //IMPORTANT. README: https://codex.wordpress.org/Function_Reference/wp_list_comments ?>
 		<ol class="comment-list">
 			<?php $args = array(
