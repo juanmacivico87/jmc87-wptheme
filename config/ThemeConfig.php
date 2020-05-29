@@ -25,6 +25,9 @@ class ThemeConfig
 
     public function create_theme_constants()
     {
+        if ( !defined( 'THEME_VERSION' ) )
+            define( 'THEME_VERSION', get_template_directory() );
+
         if ( !defined( 'THEME_DIR' ) )
             define( 'THEME_DIR', get_template_directory() );
 
