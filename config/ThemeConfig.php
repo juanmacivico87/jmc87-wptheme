@@ -22,7 +22,6 @@ class ThemeConfig
 
         add_action( 'after_setup_theme', array( $this, 'load_theme_textdomain' ) );
         add_action( 'after_setup_theme', array( $this, 'load_theme_supports' ) );
-        add_action( 'login_head', array( $this, 'mylogo_login' ) );
     }
 
     public function create_theme_constants()
@@ -75,11 +74,5 @@ class ThemeConfig
             'flex-width' 		=> true,
             'header-text' 		=> array( 'site-title', 'site-description' ),
         ) );
-    }
-
-    function mylogo_login()
-    {
-        echo '<style type="text/css">
-            .login h1 a { background-image:url(' . PREFIX_THEME_ASSETS_DIR . '/images/website-logo.svg) !important; }</style>';
     }
 }
