@@ -19,6 +19,6 @@ class LoadThemeStyles
 
     function load_styles()
     {
-        wp_enqueue_style( 'style', THEME_INCLUDES_DIR . '/css/css-file.css', array(), THEME_VERSION );
+        wp_enqueue_style( 'style', PREFIX_THEME_ASSETS_DIR . '/css/css-file.css', array(), PREFIX_THEME_VERSION );
     }
 }

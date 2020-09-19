@@ -19,7 +19,7 @@ class LoadThemeScripts
 
     function load_scripts()
     {
-        wp_enqueue_script( 'credits-js', THEME_INCLUDES_DIR . '/js/credits.js', array(), THEME_VERSION, true );
-        wp_enqueue_script( 'js', THEME_INCLUDES_DIR . '/js/js-file.js', array(), THEME_VERSION, true );
+        wp_enqueue_script( 'credits-js', PREFIX_THEME_ASSETS_DIR . '/js/credits.js', array(), PREFIX_THEME_VERSION, true );
+        wp_enqueue_script( 'js', PREFIX_THEME_ASSETS_DIR . '/js/js-file.js', array(), PREFIX_THEME_VERSION, true );
     }
 }

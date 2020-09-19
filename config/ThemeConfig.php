@@ -25,20 +25,20 @@ class ThemeConfig
 
     public function create_theme_constants()
     {
-        if ( !defined( 'THEME_VERSION' ) )
-            define( 'THEME_VERSION', '1.0' );
+        if ( !defined( 'PREFIX_THEME_VERSION' ) )
+            define( 'PREFIX_THEME_VERSION', '1.0' );
 
-        if ( !defined( 'THEME_DIR' ) )
-            define( 'THEME_DIR', get_template_directory() );
+        if ( !defined( 'PREFIX_THEME_DIR' ) )
+            define( 'PREFIX_THEME_DIR', get_template_directory() );
 
-        if ( !defined( 'THEME_URL' ) )
-            define( 'THEME_URL', get_template_directory_uri() );
+        if ( !defined( 'PREFIX_THEME_URL' ) )
+            define( 'PREFIX_THEME_URL', get_template_directory_uri() );
 
-        if ( !defined( 'THEME_LANG_DIR' ) )
-            define( 'THEME_LANG_DIR', get_template_directory_uri() . '/languages' );
+        if ( !defined( 'PREFIX_THEME_LANG_DIR' ) )
+            define( 'PREFIX_THEME_LANG_DIR', get_template_directory_uri() . '/languages' );
 
-        if ( !defined( 'THEME_INCLUDES_DIR' ) )
-            define( 'THEME_INCLUDES_DIR', get_template_directory_uri() . '/inc' );
+        if ( !defined( 'PREFIX_THEME_ASSETS_DIR' ) )
+            define( 'PREFIX_THEME_ASSETS_DIR', get_template_directory_uri() . '/assets' );
     }
 
     public function load_config()
@@ -55,7 +55,7 @@ class ThemeConfig
 
     public function load_theme_textdomain()
     {
-        load_theme_textdomain( 'wptheme-sample', THEME_LANG_DIR );
+        load_theme_textdomain( 'wptheme-sample', PREFIX_THEME_LANG_DIR );
     }
 
     public function load_theme_supports()
@@ -78,6 +78,6 @@ class ThemeConfig
     function mylogo_login()
     {
         echo '<style type="text/css">
-            .login h1 a { background-image:url(' . THEME_INCLUDES_DIR . '/images/website-logo.svg) !important; }</style>';
+            .login h1 a { background-image:url(' . PREFIX_THEME_ASSETS_DIR . '/images/website-logo.svg) !important; }</style>';
     }
 }
