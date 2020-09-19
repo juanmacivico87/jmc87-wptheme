@@ -12,5 +12,5 @@ if ( !defined( 'ABSPATH' ) )
 
 require_once 'vendor/autoload.php';
 
-use Config\ThemeConfig;
-$config = new ThemeConfig;
+use PrefixConfig\ThemeConfig;
+$prefix_config = new ThemeConfig;

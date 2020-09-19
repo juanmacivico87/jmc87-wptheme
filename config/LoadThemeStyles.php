@@ -5,7 +5,7 @@
  * @package wptheme-sample
  */
 
-namespace Config;
+namespace PrefixConfig;
 
 if ( !defined( 'ABSPATH' ) )
     exit;

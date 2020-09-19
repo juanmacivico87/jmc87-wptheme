@@ -5,7 +5,7 @@
  * @package wptheme-sample
  */
 
-namespace Config;
+namespace PrefixConfig;
 
 if ( !defined( 'ABSPATH' ) )
     exit;
@@ -43,14 +43,14 @@ class ThemeConfig
 
     public function load_config()
     {
-        $menu    = new ThemeMenus;
-        $scripts = new LoadThemeScripts;
-        $styles  = new LoadThemeStyles;
+        $menu    = new ThemeMenus();
+        $scripts = new LoadThemeScripts();
+        $styles  = new LoadThemeStyles();
     }
 
     public function load_source()
     {
-        $sample = new \Source\SampleClass\SampleClass;
+        $sample = new \PrefixSource\SampleClass\SampleClass;
     }
 
     public function load_theme_textdomain()

@@ -1,5 +1,5 @@
 <?php
-namespace Source\SampleClass;
+namespace PrefixSource\SampleClass;
 
 if ( !defined( 'ABSPATH' ) )
     exit;

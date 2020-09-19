@@ -7,7 +7,7 @@
 
 /* IMPORTANT. README: Menu Item CSS Classes: https://developer.wordpress.org/reference/functions/wp_nav_menu/#menu-item-css-classes */
 
-namespace Config;
+namespace PrefixConfig;
 
 if ( !defined( 'ABSPATH' ) )
     exit;
