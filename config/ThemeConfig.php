@@ -10,6 +10,8 @@ namespace PrefixConfig;
 if ( !defined( 'ABSPATH' ) )
     exit;
 
+use PrefixSource\SampleClass\SampleClass;
+
 class ThemeConfig
 {
     public function __construct()
@@ -50,7 +52,7 @@ class ThemeConfig
 
     public function load_source()
     {
-        $sample = new \PrefixSource\SampleClass\SampleClass;
+        $sample = new SampleClass();
     }
 
     public function load_theme_textdomain()
