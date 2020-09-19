@@ -4,5 +4,5 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package wptheme
+ * @package wptheme-sample
  */

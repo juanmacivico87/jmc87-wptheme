@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package wptheme
+ * @package wptheme-sample
  */
 
  //https://developer.wordpress.org/themes/functionality/pagination/
@@ -13,8 +13,8 @@
 
 $args = array(
     'mid_size'  => 2,
-    'prev_text' => __( '<', 'wptheme-textdomain' ),
-    'next_text' => __( '>', 'wptheme-textdomain' ),
+    'prev_text' => __( '<', 'wptheme-sample' ),
+    'next_text' => __( '>', 'wptheme-sample' ),
 );
 
 the_posts_pagination( $args );

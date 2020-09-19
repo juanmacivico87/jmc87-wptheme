@@ -2,7 +2,7 @@
 /**
  * Class to load CSS files
  *
- * @package wptheme
+ * @package wptheme-sample
  */
 
 namespace Config;

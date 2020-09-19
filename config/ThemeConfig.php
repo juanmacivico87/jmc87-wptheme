@@ -2,7 +2,7 @@
 /**
  * Class to load basic theme configuration
  *
- * @package wptheme
+ * @package wptheme-sample
  */
 
 namespace Config;
@@ -55,7 +55,7 @@ class ThemeConfig
 
     public function load_theme_textdomain()
     {
-        load_theme_textdomain( 'wptheme-textdomain', THEME_LANG_DIR );
+        load_theme_textdomain( 'wptheme-sample', THEME_LANG_DIR );
     }
 
     public function load_theme_supports()

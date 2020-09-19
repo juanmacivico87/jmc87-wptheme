@@ -2,7 +2,7 @@
 /**
  * Class to load javascripts files
  *
- * @package wptheme
+ * @package wptheme-sample
  */
 
 namespace Config;

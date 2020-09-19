@@ -1,5 +1,5 @@
 {
-    "name": "WordPress Theme",
+    "name": "wptheme/sample",
     "description": "Custom WordPress Theme",
     "require": {
         "php": ">=7.2"

@@ -1,10 +1,10 @@
 <?php
 /**
- * wptheme functions and definitions
+ * WPTheme functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package wptheme
+ * @package wptheme-sample
  */
 
 if ( !defined( 'ABSPATH' ) )

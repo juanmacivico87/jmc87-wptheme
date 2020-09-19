@@ -2,7 +2,7 @@
 /**
  * Class to load theme menus
  *
- * @package wptheme
+ * @package wptheme-sample
  */
 
 /* IMPORTANT. README: Menu Item CSS Classes: https://developer.wordpress.org/reference/functions/wp_nav_menu/#menu-item-css-classes */
@@ -23,8 +23,8 @@ class ThemeMenus
     {
         register_nav_menus(
 			array(
-				'header-menu' => __( 'Header Menu', 'wptheme-textdomain' ),
-				'footer-menu' => __( 'Footer Menu', 'wptheme-textdomain')
+				'header-menu' => __( 'Header Menu', 'wptheme-sample' ),
+				'footer-menu' => __( 'Footer Menu', 'wptheme-sample')
 			)
 		);
     }
