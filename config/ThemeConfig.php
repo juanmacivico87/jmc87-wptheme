@@ -30,20 +30,11 @@ class ThemeConfig
 
     public function create_theme_constants()
     {
-        if ( !defined( 'PREFIX_THEME_VERSION' ) )
-            define( 'PREFIX_THEME_VERSION', '1.0' );
-
-        if ( !defined( 'PREFIX_THEME_DIR' ) )
-            define( 'PREFIX_THEME_DIR', get_template_directory() );
-
-        if ( !defined( 'PREFIX_THEME_URL' ) )
-            define( 'PREFIX_THEME_URL', get_template_directory_uri() );
-
-        if ( !defined( 'PREFIX_THEME_LANG_DIR' ) )
-            define( 'PREFIX_THEME_LANG_DIR', get_template_directory_uri() . '/languages' );
-
-        if ( !defined( 'PREFIX_THEME_ASSETS_DIR' ) )
-            define( 'PREFIX_THEME_ASSETS_DIR', get_template_directory_uri() . '/assets' );
+        define( 'PREFIX_THEME_VERSION', '1.0' );
+        define( 'PREFIX_THEME_DIR', get_template_directory() );
+        define( 'PREFIX_THEME_URL', get_template_directory_uri() );
+        define( 'PREFIX_THEME_LANG_DIR', get_template_directory_uri() . '/languages' );
+        define( 'PREFIX_THEME_ASSETS_DIR', get_template_directory_uri() . '/assets' );
     }
 
     public function load_config()
