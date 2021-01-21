@@ -18,10 +18,14 @@ class ThemeConfig
     {
         $this->create_theme_constants();
         $this->load_config();
-        $this->load_source();
+        $this->init();
+    }
 
+    public function init()
+    {
         add_action( 'after_setup_theme', array( $this, 'load_theme_textdomain' ) );
         add_action( 'after_setup_theme', array( $this, 'load_theme_supports' ) );
+        add_action( 'after_setup_theme', array( $this, 'load_source' ) );
     }
 
     public function create_theme_constants()

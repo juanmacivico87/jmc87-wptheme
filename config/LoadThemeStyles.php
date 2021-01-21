@@ -14,6 +14,11 @@ class LoadThemeStyles
 {
     public function __construct()
     {
+        $this->init();
+    }
+
+    public function init()
+    {
         add_action( 'wp_enqueue_scripts', array( $this, 'load_styles' ) );
     }
 
