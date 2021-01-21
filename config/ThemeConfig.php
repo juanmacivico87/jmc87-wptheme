@@ -30,7 +30,6 @@ class ThemeConfig
 
     public function create_theme_constants()
     {
-        define( 'PREFIX_THEME_VERSION', '1.0' );
         define( 'PREFIX_THEME_DIR', get_template_directory() );
         define( 'PREFIX_THEME_URL', get_template_directory_uri() );
         define( 'PREFIX_THEME_LANG_DIR', get_template_directory_uri() . '/languages' );

@@ -24,7 +24,7 @@ class LoadThemeScripts
 
     function load_scripts()
     {
-        wp_enqueue_script( 'wptheme-sample-credits', PREFIX_THEME_ASSETS_DIR . '/js/credits.js', array(), PREFIX_THEME_VERSION, true );
-        wp_enqueue_script( 'wptheme-sample', PREFIX_THEME_ASSETS_DIR . '/js/scripts.js', array(), PREFIX_THEME_VERSION, true );
+        wp_enqueue_script( 'wptheme-sample-credits', PREFIX_THEME_ASSETS_DIR . '/js/credits.js', array(), '0.1', true );
+        wp_enqueue_script( 'wptheme-sample', PREFIX_THEME_ASSETS_DIR . '/js/scripts.js', array(), '0.1', true );
     }
 }
