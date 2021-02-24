@@ -1,6 +1,6 @@
 {
     "name": "wptheme/sample",
-    "description": "Custom WordPress Theme",
+    "description": "{{ theme_description }}",
     "require": {
         "php": ">=7.2"
     },
